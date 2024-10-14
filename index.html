@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven</title>
+    <link rel="icon" type="image" href="icon.jpg"
+    
+    
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: transparent;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 15px 30px;
+    position: left;
+    top: 0;
+    z-index: 10;
+    
+}
+
+.h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 15px 30px;
+    position: left;
+    top: 0;
+    z-index: 10;
+
+}
+.logo-icon {
+    height: 50px;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s, border-radius 0.3s;
+    border-radius: 0;
+}
+
+.nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 13.061px;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+    width: 139px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    color: black;
+    background: none;
+    border: transparent;
+    color: transparent;
+    padding: 4px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.main-content {
+    background-image: url('background.png'); /* Make sure the image path is correct */
+
+    background-position: center;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+
+.main-content h1 {
+    font-size: 3.5em; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Stronger text shadow */
+}
+
+.get-started {
+    background-color:  #004080; /* Updated button color */
+    color: #fff;
+    border: none;
+    width: 15%;
+    left: 43%;
+    padding: 10px 36px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px; /* More rounded corners */
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.get-started:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #004080; /* Updated footer color */
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    text-align: left;
+    text-align-last
+}
+
+.footer2 {
+
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer3 {
+    text-align: right;
+   
+
+}
+.footer p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    </style>
+<body>
+    <header class="header">
+        <image src= "logo.png"alt="logo" width="200" height="100"> 
+
+        <nav class="nav">
+            <a href="#">Features</a>
+            <a href="#">Library Hours</a>
+            <a href="#">Help/FAQ</a>
+            <a href="#">Ask a Librarian</a>
+        </nav>
+        <div class="buttons">
+                <button><a href="signin.html">SIGN IN</a></button>
+                <button><a href="librarian.html">LIBRARIAN</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1>Your Sanctuary for Stories, Knowledge, and Adventure!</h1>
+        <button class="get-started">Get Started</button>
+    </main>
+
+    <footer class="footer">
+        <p>CONTACT US</p>
+        <p>+63900-000-0000</p>
+        <p>mail@library.uc.edu.ph</p>
+        <p>University of Cebu - Main Campus</p>
+        <p>Sanciangko St., Cebu City</p>
+        <p>6000</p>
+         <footer class="footer2">
+         <p>Copyright 2024, BOOKHAVEN All Rights Reserved.</p>
+         <footer class="footer3">
+        <div class="social-links">
+            <img src="fb.png" alt="facebook" width="30" height="30">
+            <img src="linkdin.png" alt="LinkedIn" width="30" height="30">
+            <img src="twitter.png" alt="Twitter" width="30" height="30">
+            
+        </div>
+    </footer>
+</body>
+</html>
