@@ -1,0 +1,253 @@
+body {
+   
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+nav a:hover,
+a:active {
+    color: black;
+    border-radius: 10px;
+}
+
+.logo {
+    /* OUR LOGO */
+    margin: -10px;
+    margin-right: 0;
+}
+
+/* Basic styling for the navbar */
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+
+    /* Adjust as needed */
+}
+
+/* Styling for the left-aligned navbar brand */
+.navbar-brand+ {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+}
+
+/*.separator {
+    height: 40px;
+    /* Match this with your logo height */
+    /*width: 1px;
+   /* background-color: #ddd;
+    /* Color of the vertical line */
+    /*margin: 0 20px;
+    /* Adjust spacing between logo and navbar */
+
+
+/* Styling for the main navigation links */
+.navbar-links {
+    display: flex;
+    padding: 6.53px 13.061px;
+    align-items: center;
+    gap: 6.53px;
+
+    /* Space between links */
+}
+
+/* Styling for the right-aligned links (Profile and Log Out) */
+.navbar-right {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+/* Style individual navbar links */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Adjust the alignment for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        display: flex;
+        padding: 6.53px 13.061px;
+        align-items: center;
+        gap: 6.53px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+}
+
+/* Styling for the menu button */
+.menu-btn {
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Styling for the search input field */
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+
+/* Optional: Hover effect for buttons */
+.menu-btn:hover {
+    color: #333;
+}
+
+/* Line divider */
+
+/* BUTTON FOR WISHLIST */
+.button-container {
+    margin-top: 20px;
+}
+
+.select-button {
+    background-color: #066a69;
+    /* Default color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 5px;
+    margin-left: 13px;
+    border-radius: 5px;
+}
+
+.delete-button {
+    color: #6F0C0C;
+    background-color: #f8f8f8;
+    margin-left: -3px;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/* BOOK CARDS */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.book-card {
+    /* background-color: #fff; */
+    border-radius: 5px;
+    padding: 10px;
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+    text-align: center;
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #004080; /* Updated footer color */
+    color: #fff;
+    text-align: center;
+    text-justify:inter-word;
+    font-size: 14px;
+    text-align: left;
+    text-align-last
+}
+.footer2 {
+
+    text-align: center;
+    font-size: 14px;
+}
+.footer3 {
+    text-align: right;
+   
+
+}
+
+
+.main-content h1{
+    width: 650px;
+    height: 398px;
+    flex-shrink: 0;
+    color: #FFF;
+    /*text-align: center;*/
+    font-family: "PT Serif Caption";
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -3px;
+    /*font-size: 3.5em; /* Increased font size */
+    /*font-weight: bold;*/
+    margin-bottom: 20px;
+    position: relative;
+}
+    .main-content {
+        background-image: url('background.png'); /* Make sure the image path is correct */
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 20px;
+        position: relative;
+
+}
+.main-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.main-content h1 {
+    font-size: 3.5em; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Stronger text shadow */
+}
+.footer p {
+    margin: 5px 0;
+}
+.social-links{
+    margin-top: 10px;
+}
+.social-links a{
+    margin: 0 10px;
+     
+}
