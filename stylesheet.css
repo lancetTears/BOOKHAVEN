@@ -4,6 +4,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+   /* height: 100%;*/
+    font-family: 'Arial', sans-serif;
 }
 
 nav a:hover,
@@ -48,14 +52,14 @@ nav {
 
 
 /* Styling for the main navigation links */
-.navbar-links {
+/*.navbar-links {
     display: flex;
     padding: 6.53px 13.061px;
     align-items: center;
     gap: 6.53px;
 
     /* Space between links */
-}
+
 
 /* Styling for the right-aligned links (Profile and Log Out) */
 .navbar-right {
@@ -171,70 +175,51 @@ nav a {
     height: auto;
     margin-bottom: 10px;
 }
-.footer {
-    background-color: #004080; /* Updated footer color */
-    color: #fff;
-    text-align: center;
-    text-justify:inter-word;
-    font-size: 14px;
-    text-align: left;
-    text-align-last
-}
-.footer2 {
-
-    text-align: center;
-    font-size: 14px;
-}
-.footer3 {
-    text-align: right;
-   
-
-}
-
-
-.main-content h1{
-    font-size: 3.5em; /* Increased font size */
-    font-weight: bold;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
-    text-shadow:white(0, 0, 0, 0.6);
-}
-    .main-content {
-        background-image: url('background.png'); /* Make sure the image path is correct */
-        background-size: cover;
-        background-position: center;
-        color: #fff;
-        text-align: center;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 60px 20px;
-        position: relative;
-
-}
-.main-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
 .main-content h1 {
     font-size: 3.5em; /* Increased font size */
     font-weight: bold;
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Stronger text shadow */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6); /* Corrected text-shadow */
 }
-.footer p {
-    margin: 5px 0;
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Full viewport height */
+    background-image: url('background-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
+
+.main-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Shadow to make text stand out */
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
 .social-links{
     margin-top: 10px;
 }
@@ -242,3 +227,41 @@ nav a {
     margin: 0 10px;
      
 }
+.footer {
+    background-color: #004080;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Evenly spaces sections */
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Makes footer responsive */
+    font-size: 16px; /*
+}
+
+
+.footer-section {
+    flex: 1; /* Ensures each section takes equal space */
+    padding: 10px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+/*.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    filter: invert(1); /* To ensure icons appear white on dark background */
